@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -27,15 +26,16 @@
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li>
-                        <h3 class="px-2 fw-bold text-secondary">Financial Calculator</h3>
+                        <h3 href="#" class="px-2 fw-bold text-secondary">Financial Calculator</h3>
                     </li>
                     <li><a href="index.html" class="nav-link px-2 fw-bold text-dark">Home</a></li>
-                    <li><a href="mortgage.html" class="nav-link px-2 fw-bold text-secondary">Mortgage</a></li>
+                    <li><a href="mortgage.html" class="nav-link px-2 fw-bold text-dark">Mortgage</a></li>
                     <li><a href="interest.html" class="nav-link px-2 fw-bold text-dark">Interest</a></li>
-                    <li><a href="annuity.html" class="nav-link px-2 fw-bold text-dark">Annuity</a></li>
+                    <li><a href="annuity.html" class="nav-link px-2 fw-bold text-secondary">Annuity</a></li>
                 </ul>
 
             </div>
+        </div>
         </div>
     </header>
 
@@ -48,60 +48,59 @@
                 <div class="container col-xxl-8 px-4 py-5">
                     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                         <div class="col-10 col-sm-8 col-lg-6">
-                            <!--<img src="#" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
-                                width="700" height="500" loading="lazy">-->
+                            <img src="images/heropic.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                                width="700" height="500" loading="lazy">
                         </div>
                         <div class="col-lg-6">
-                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Calculate Your Mortgage!</h1>
-
+                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Calculate Annuity!</h1>
+                        
                             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
 
-                                <!--FORM-->
-                                <!--The FORM Starts Here!-->
-                                <form>
+                            <!--FORM-->
+                                 <!--The FORM Starts Here!-->
+                                 <form>
 
 
-                                    <!--Home Price TextBox-->
+                                    <!--Present Value of Annuity TextBox-->
                                     <div class="mt-4 fw-bold">
-                                        <label for="homePrice">Home Price:</label>
-                                        <input id="homePrice" class="form-control mt-2" type="text">
+                                        <label for="presValOfAnnutiy">Present value of Annuity:</label>
+                                        <input id="presValOfAnnutiy" class="form-control mt-2" type="text">
                                     </div>
 
-                                    <!--Down Payment TextBox-->
-                                    <div class="mt-4 fw-bold">
-                                        <label for="downPayment">Down Payment:</label>
-                                        <input id="downPayment" class="form-control mt-2" type="text">
+                                     <!--Future cash flow stream TextBox-->
+                                     <div class="mt-4 fw-bold">
+                                        <label for="futureCashFlowStream">Future cash flow stream:</label>
+                                        <input id="futureCashFlowStream" class="form-control mt-2" type="text">
                                     </div>
 
-                                    <!--Loan Term TextBox-->
-                                    <div class="mt-4 fw-bold">
-                                        <label for="loanTerm">Loan Term:</label>
-                                        <input id="loanTerm" class="form-control mt-2" type="text">
-                                    </div>
-
-                                    <!--Interest Rate TextBox-->
-                                    <div class="mt-4 fw-bold">
+                                     <!--Interest Rate TextBox-->
+                                     <div class="mt-4 fw-bold">
                                         <label for="interestRate">Interest Rate:</label>
                                         <input id="interestRate" class="form-control mt-2" type="text">
                                     </div>
 
-                                    <!--button-->
-
-                                    <div class="mt-4">
-                                        <button id="calculateBtn" class="btn btn-secondary btn-lg px-4 me-md-2"
-                                            type="button">Calculate monthly payment!</button>
+                                    <!--Number of periods TextBox-->
+                                    <div class="mt-4 fw-bold">
+                                        <label for="numOfPeriods">Number of periods:</label>
+                                        <input id="numOfPeriods" class="form-control mt-2" type="text">
                                     </div>
-
-
+                
+                                    <!--button-->
+                
+                                    <div class="mt-4">
+                                        <button id="calculateBtn" class="btn btn-secondary btn-lg px-4 me-md-2" type="button">Calculate your annuity!</button>
+                                    </div>
+                                    
+                
                                     <!--Answer TextBox-->
                                     <div class="mt-4 fw-bold">
-                                        <label for="result">MORTGAGE RATE:</label>
-                                        <input id="result" class="form-control mt-2">
+                                    <label for="estAnnuity">Est. ANNUITY:</label>
+                                    <input id="estAnnuity" class="form-control mt-2">
                                     </div>
-
-
+                
+                
                                 </form> <!--End of FORM-->
-
+                
 
                             </div>
                         </div>
@@ -118,7 +117,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-    <script src="mortgage.js"></script>
+    <script src="site.css"></script>
 </body>
 
 </html>

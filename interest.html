@@ -28,9 +28,9 @@
                     <li>
                         <h3 href="#" class="px-2 fw-bold text-secondary">Financial Calculator</h3>
                     </li>
-                    <li><a href="index.html" class="nav-link px-2 fw-bold text-secondary">Home</a></li>
+                    <li><a href="index.html" class="nav-link px-2 fw-bold text-dark">Home</a></li>
                     <li><a href="mortgage.html" class="nav-link px-2 fw-bold text-dark">Mortgage</a></li>
-                    <li><a href="interest.html" class="nav-link px-2 fw-bold text-dark">Interest</a></li>
+                    <li><a href="interest.html" class="nav-link px-2 fw-bold text-secondary">Interest</a></li>
                     <li><a href="annuity.html" class="nav-link px-2 fw-bold text-dark">Annuity</a></li>
                 </ul>
 
@@ -52,13 +52,49 @@
                                 width="700" height="500" loading="lazy">
                         </div>
                         <div class="col-lg-6">
-                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Financial Calculators!</h1>
-                            <p class="lead">"Take control of your finances with our online calculators! From budgeting
-                                to retirement planning, our user-friendly tools make financial planning a breeze. Join
-                                our financial journey today and start making money moves with ease!"</p>
+                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Calculate Your Interest!</h1>
+                        
                             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
 
-                                <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2">Start Calculating!</button>
+                            <!--FORM-->
+                                 <!--The FORM Starts Here!-->
+                                 <form>
+
+
+                                    <!--APY TextBox-->
+                                    <div class="mt-4 fw-bold">
+                                        <label for="APY">APY:</label>
+                                        <input id="APY" class="form-control mt-2" type="text">
+                                    </div>
+
+                                     <!--Min. Deposit TextBox-->
+                                     <div class="mt-4 fw-bold">
+                                        <label for="minDeposit">Min. Deposit:</label>
+                                        <input id="minDeposit" class="form-control mt-2" type="text">
+                                    </div>
+
+                                     <!--Loan Term TextBox-->
+                                     <div class="mt-4 fw-bold">
+                                        <label for="loanTerm">Loan Term:</label>
+                                        <input id="loanTerm" class="form-control mt-2" type="text">
+                                    </div>
+                
+                                    <!--button-->
+                
+                                    <div class="mt-4">
+                                        <button id="calculateBtn" class="btn btn-secondary btn-lg px-4 me-md-2" type="button">Calculate your earnings!</button>
+                                    </div>
+                                    
+                
+                                    <!--Answer TextBox-->
+                                    <div class="mt-4 fw-bold">
+                                    <label for="estEarnings">Est. EARNINGS:</label>
+                                    <input id="estEarnings" class="form-control mt-2">
+                                    </div>
+                
+                
+                                </form> <!--End of FORM-->
+                
 
                             </div>
                         </div>
